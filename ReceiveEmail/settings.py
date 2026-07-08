@@ -5,8 +5,8 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 SECRET_KEY = os.environ.get("secret_key")
-DEBUG = os.environ.get("development")
-ALLOWED_HOSTS = ["127.0.0.1",".asiradnan.com",".now.sh"]
+DEBUG = False
+ALLOWED_HOSTS = ["127.0.0.1",".asiradnan.com"]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -47,7 +47,7 @@ USE_I18N = True
 USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = 'staticfiles' 
+STATIC_ROOT = 'staticfiles'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_HOST="smtp.gmail.com"
 EMAIL_PORT=587

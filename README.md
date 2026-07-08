@@ -1,17 +1,21 @@
-# Send Wish 🎉  
-[Send Wish](https://sendwish.asiradnan.com) – Send wishes to whoever you want without revealing your identity!  
+# <img src="./static/favicon.png" alt="SendWish Icon" height="32" align="center"> SendWish
 
-## ✨ Features  
-✅ Send wishes to anyone from `anonymouswisher00@gmail.com`  
-✅ Stay anonymous – your identity remains hidden  
-✅ Clean and simple user interface  
-✅ Built with Django for backend processing  
+A anonymous email sender web application built using HTML, CSS, and Django. Send heartfelt wishes, greetings, or messages to anyone via email — without revealing your identity.
 
-## 🛠 Tech Stack  
-- **Backend:** Django  
-- **Frontend:** HTML, CSS  
+> This project was built to learn and practice Django's email sending capabilities and form handling.
 
-## 🚀 How to Use  
-1. Visit [Send Wish](https://sendwish.asiradnan.com)  
-2. Enter recipient details and your message  
-3. Click send – it’s that easy!  
+## Live Link
+
+Check out SendWish in action: [https://sendwish.asiradnan.com](https://sendwish.asiradnan.com)
+
+## Features
+
+- **Anonymous Sending:** Send emails from a fixed anonymous address so your identity stays hidden.
+- **File Attachments:** Attach a file or image along with your message.
+- **Custom Subject & Body:** Craft your own subject line and message body.
+- **Instant Feedback:** Success and error notifications displayed after each send attempt.
+- **Responsive Design:** Works on any device with a clean, simple interface.
+
+## License
+
+This project is open source under the **MIT License**.

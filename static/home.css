@@ -1,13 +1,14 @@
-body{
+body {
     display: grid;
     justify-content: center;
     align-items: center;
     background-color: burlywood;
     justify-items: center;
-    font-family: 'Manrope',sans-serif;
-    grid-template-rows: 10vh auto;
+    font-family: 'Manrope', sans-serif;
+    grid-template-rows: 10vh auto 20px;
 }
-.message{
+
+.message {
     min-width: 300px;
     max-width: 400px;
     background-color: antiquewhite;
@@ -18,12 +19,14 @@ body{
     color: black;
     border-radius: 5px;
 }
-form{
+
+form {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
-input{
+
+input {
     width: calc(100% - 60px);
     font-size: 18px;
     border-radius: 16px;
@@ -34,11 +37,13 @@ input{
     margin-left: 30px;
     margin-right: 30px;
 }
-input[type="file"]{
+
+input[type="file"] {
     width: 200px;
     margin: 0;
 }
-textarea{
+
+textarea {
     width: calc(100% - 60px);
     font-size: 20px;
     border-radius: 16px;
@@ -47,25 +52,31 @@ textarea{
     max-height: 40vh;
     margin: 5px 30px 10px 30px;
 }
-input:focus, textarea:focus{
+
+input:focus,
+textarea:focus {
     outline-color: transparent;
 }
-#to{
+
+#to {
     margin-top: 25px;
 }
-header{
+
+header {
     background-color: rgb(142, 119, 77);
     display: grid;
     align-items: center;
     height: 50px;
     border-radius: 20px 20px 0 0;
 }
-p{
+
+p {
     color: whitesmoke;
     margin: 0 0 0 20px;
     font-size: 20px;
 }
-.bottomDiv{
+
+.bottomDiv {
     background-color: antiquewhite;
     margin: 0;
     height: 50px;
@@ -75,10 +86,12 @@ p{
     align-items: center;
     border-radius: 0 0 20px 20px;
 }
+
 input[type="file"] {
     display: none;
 }
-button{
+
+button {
     background-color: aliceblue;
     border: aliceblue;
     height: 30px;
@@ -89,6 +102,7 @@ button{
     vertical-align: middle;
     font-size: 15px;
 }
+
 .custom-file-upload {
     background-color: aliceblue;
     border: aliceblue;
@@ -105,27 +119,63 @@ button{
     color: buttontext;
     font-family: 'Manrope', sans-serif;
 }
+
 .custom-file-upload input[type="file"] {
     display: none;
 }
+
 @media screen and (min-width: 1200px) {
-    body{
-        grid-template-columns: minmax(400px,750px);
+    body {
+        grid-template-columns: minmax(400px, 750px);
     }
 }
+
 @media screen and (max-width: 1200px) {
-    body{
-        grid-template-columns: minmax(300px,750px);
+    body {
+        grid-template-columns: minmax(300px, 750px);
     }
-    textarea{
+
+    textarea {
         min-height: 45vh;
     }
-    input{
+
+    input {
         font-size: 16px;
         border-radius: 16px;
     }
-    .message{
-        min-width: 250px;
-        font-size: 13px;
+
+    .message {
+        margin: auto;
+        font-size: 12px;
+        padding: 4px 8px 4px 8px;
+    }
+
+    textarea {
+        width: calc(100% - 32px);
+        font-size: 16px;
+        margin: 8px 16px 8px 16px;
+    }
+
+    input {
+        width: calc(100% - 32px);
+        font-size: 14px;
+        padding: 4px 12px 4px 12px;
+        margin-bottom: 12px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    button {
+        height: 24px;
+        font-size: 14px;
+    }
+
+    .custom-file-upload {
+        height: 24px;
+        font-size: 14px;
+    }
+
+    .bottomDiv {
+        height: 40px;
     }
 }

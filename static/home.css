@@ -7,7 +7,7 @@ body{
     font-family: 'Manrope',sans-serif;
     grid-template-rows: 10vh auto;
 }
-article{
+.message{
     min-width: 300px;
     max-width: 400px;
     background-color: antiquewhite;
@@ -65,7 +65,7 @@ p{
     margin: 0 0 0 20px;
     font-size: 20px;
 }
-footer{
+.bottomDiv{
     background-color: antiquewhite;
     margin: 0;
     height: 50px;
@@ -124,7 +124,7 @@ button{
         font-size: 16px;
         border-radius: 16px;
     }
-    article{
+    .message{
         min-width: 250px;
         font-size: 13px;
     }

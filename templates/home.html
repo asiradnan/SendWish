@@ -11,25 +11,22 @@
 <body>
     {% for m in messages %}
         {% if forloop.first %}
-            <article>{{m}}</article> 
+            <p class="message">{{m}}</p> 
         {% endif %}
     {% endfor %}
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         <header><p>New Email</p></header>
-        <!-- <label for="to">To:</label> -->
         <input type="email" id="to" name="to" placeholder="To" required>
-        <!-- <label for="subject">Subject:</label> -->
         <input type="text" name="subject" placeholder="Subject">
-        <!-- <label for="body">Body:</label> -->
         <textarea name="body" id="body"></textarea>
-        <footer>
+        <div class="bottomDiv">
             <label class="custom-file-upload">
                 <input type="file" name="file">
                 <span class="file-text">Attach File</span>
             </label>
             <button type="submit">Send</button>
-        </footer>
+        </div>
     </form>
     <script>
     const fileInput = document.querySelector('input[type="file"]');

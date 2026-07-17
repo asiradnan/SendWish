@@ -16,6 +16,9 @@ Check out SendWish in action: [https://sendwish.asiradnan.com](https://sendwish.
 - **Instant Feedback:** Success and error notifications displayed after each send attempt.
 - **Responsive Design:** Works on any device with a clean, simple interface.
 
+## Screenshots
+<img src="./screenshots/screenshot.png" alt="Send Wish Screenshot" width="150">
+
 ## License
 
 This project is open source under the **MIT License**.
